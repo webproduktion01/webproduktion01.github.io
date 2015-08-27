@@ -1,0 +1,9 @@
+www.server.se
+
+www
+    index.html
+    html
+        default.html
+        pages
+            top.html
+            bottom.html

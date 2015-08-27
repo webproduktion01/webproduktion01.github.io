@@ -7,3 +7,19 @@ www
         pages
             top.html
             bottom.html
+
+
+1.4.1. Vilken är den absoluta sökvägen till filen bottom.html? 
+
+www.server.se/bottom.html
+
+1.4.2. Vilken är den relativa sökvägen från filen default.html till filen top.html? 
+
+1.4.3. Vilken är den relativa sökvägen från 
+filen bottom.html till filen index.html? 
+
+1.4.4. Vilken är den absoluta sökvägen till filen index.html? 
+
+1.4.5. Vilken är den relativa sökvägen från filen top.html till bottom.html? 
+
+1.4.6. Vilken är den relativa sökvägen från filen index.html till top.html:

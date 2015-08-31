@@ -17,12 +17,13 @@
         </nav>
         <div id="contactForm">
             Observera! Detta är bara ett påhittat kontaktformulär
+            <!-- legacy code reminder  will probably use it for later on -->
+            <!-- <form oninput="resultat.value=subject.value +' '+ headline.value +' '+ textarea.value +' '+ check_mail.checked +' '+ check_phone.checked" id="contact_form"> -->
             <form action="http://webproduction.standout.se/form.php" method="post" id="contact_form">
                 <fieldset>
                     <legend>Fråga</legend>
                     <p>
                         <label for="subject">Ärendetyp </label>
-                        <input type="hidden" name="actionList" id="actionList"/>
                         <select name="actionList" form="contact_form" id="subject">
                             <option value="1">Fråga</option>
                             <option value="2">Klagomål</option>
@@ -35,21 +36,22 @@
                     </p>
                     <p>
                         <label for="textarea">Fråga: </label>
-                        <input type="hidden" name="inputText"/>
                         <textarea name="textarea" form="contact_form" id="textarea" >Jag sitter och testar formuläret.</textarea>
                     </p>
                 </fieldset>
                 <fieldset>
                         <legend>Information om dig</legend>
                         <!-- Assumed that you'd be able to be contacted both ways hence no radiobutton--> 
-                        <!-- dubbelkolla sedan -->
                         <label for="check_mail">kontakta via mail</label>
-                        <input type="checkbox" name="contacttype" id="kontakta_via_mail" id="check_mail"/>
+                        <input type="checkbox" name="contact_type" value="mail" id="check_mail"/>
                         <br>
                         <label for="check_phone">kontakta via telefon</label>
-                        <input type="checkbox" name="contacttype" id="kontakta_via_telefon" id="check_phone"/>
+                        <input type="checkbox" name="contact_type" value="phone" id="check_phone"/>
                 </fieldset>
                 <input type="submit" name="submit_button"/>
+                <!-- Tested the result with <output>. Output probably gets used as a preview and then after doing a post after the user has verified that the information is correct 
+                <!--<output name="resultat">Resultat:</output> -->
+                
             </form>
         </div>
     </body>

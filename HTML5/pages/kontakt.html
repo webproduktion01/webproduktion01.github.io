@@ -5,7 +5,7 @@
         <title>kontakt</title>
     </head>
     <body>
-        <div id="navigation">
+        <nav>
             <p>
                 <h4>Navigationsmeny</h4>
                 <ul>
@@ -14,7 +14,7 @@
                     <li><a href="/HTML5/pages/presentation.html">presentation</a></li>
                     <li><a href="/HTML5/pages/kontakt.html">kontakt</a></li>
                 </ul>
-        </div>
+        </nav>
         <div id="contactForm">
             Observera! Detta är bara ett påhittat kontaktformulär
             <form action="http://webproduction.standout.se/form.php" method="post" id="contact_form">
@@ -42,11 +42,12 @@
                 <fieldset>
                         <legend>Information om dig</legend>
                         <!-- Assumed that you'd be able to be contacted both ways hence no radiobutton--> 
+                        <!-- dubbelkolla sedan -->
                         <label for="check_mail">kontakta via mail</label>
-                        <input type="checkbox" name="kontakta_via_mail" id="check_mail"/>
+                        <input type="checkbox" name="contacttype" id="kontakta_via_mail" id="check_mail"/>
                         <br>
                         <label for="check_phone">kontakta via telefon</label>
-                        <input type="checkbox" name="kontakta_via_telefon" id="check_phone"/>
+                        <input type="checkbox" name="contacttype" id="kontakta_via_telefon" id="check_phone"/>
                 </fieldset>
                 <input type="submit" name="submit_button"/>
             </form>

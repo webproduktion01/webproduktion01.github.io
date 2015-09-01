@@ -23,30 +23,30 @@
                 <fieldset>
                     <legend>Fråga</legend>
                     <p>
-                        <label for="subject">Ärendetyp </label>
-                        <select name="actionList" form="contact_form" id="subject">
+                        <label for="errand">Ärendetyp </label>
+                        <select name="errand" form="contact_form" id="errand">
                             <option value="1">Fråga</option>
                             <option value="2">Klagomål</option>
                             <option value="3">Förfrågan</option>
                         </select>
                     </p>
                     <p>
-                        <label for="headline">Rubrik: </label>
-                        <input type="text" name="headline" id="headline" value="Vad göra?"/>
+                        <label for="title">Rubrik: </label>
+                        <input type="text" name="title" id="title" value="Vad göra?"/>
                     </p>
                     <p>
-                        <label for="textarea">Fråga: </label>
-                        <textarea name="textarea" form="contact_form" id="textarea" >Jag sitter och testar formuläret.</textarea>
+                        <label for="question">Fråga: </label>
+                        <textarea name="question" form="contact_form" id="question" >Jag sitter och testar formuläret.</textarea>
                     </p>
                 </fieldset>
                 <fieldset>
                         <legend>Information om dig</legend>
                         <!-- Assumed that you'd be able to be contacted both ways hence no radiobutton--> 
-                        <label for="check_mail">kontakta via mail</label>
-                        <input type="checkbox" name="contact_type" value="mail" id="check_mail"/>
+                        <label for="contact">kontakta via mail</label>
+                        <input type="checkbox" name="contact" value="mail" id="check_mail"/>
                         <br>
                         <label for="check_phone">kontakta via telefon</label>
-                        <input type="checkbox" name="contact_type" value="phone" id="check_phone"/>
+                        <input type="checkbox" name="contact" value="phone" id="check_phone"/>
                 </fieldset>
                 <input type="submit" value="Send" name="submit_button"/>
                 <!-- Tested the result with <output>. Output probably gets used as a preview and then after doing a post after the user has verified that the information is correct --> 
